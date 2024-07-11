@@ -93,8 +93,18 @@
 
 // Switch case
 
-let role;
+// let role='jim';
 
-switch (role){   // we add a variable
+// switch (role){   // we add a variable instead of condition
+//     case 'guest':
+//         console.log('Guest User');
+//         break;
+//     case 'moderator':
+//         console.log('Moderator User');
+//         break;
 
-}
+//     default:
+//         console.log('Unknown User');
+
+
+// }
