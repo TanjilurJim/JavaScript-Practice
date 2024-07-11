@@ -108,3 +108,47 @@
 
 
 // }
+
+// for (let i = 0; i <5; i++) {
+//     // console.log('Hello World', i);
+//     if (i % 2 != 0) console.log(i)
+
+// }
+
+// let i = 0;
+
+// while( i <=5){
+//     if (i % 2 !== 0) console.log(i)
+//     i++;
+// }
+
+// do-while
+
+// let i = 0;
+// do {
+//     if (i %2 !== 0)console.log(i);
+//     i++; 
+        
+    
+// } while (i <=5); 
+
+// for in loop to iterate through properties of an object or elements in an array
+
+// const person = {
+//     name: "mosh",
+//     age: 30
+// };
+
+// for (let key in person)
+//     console.log(key, person[key]);
+
+const colors = ['red','blue','green']
+
+// for (let index in colors)
+//     console.log(index,colors[index]);
+
+// for-of loop is an ideal way of iterating through arrays
+
+for(let color of colors)
+    console.log(color) // it would give the values of the index directly
+
