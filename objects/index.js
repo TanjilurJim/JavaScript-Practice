@@ -208,14 +208,38 @@
 // if we do not pass a number we get == 'not a number'
 
 
-function fizzBuzz(input) {
-    if (typeof input !== 'number') return 'not a number';
-    if (input % 3 === 0 && input % 5 === 0) return 'fizzbuzz';
-    if (input % 3 === 0) return 'fizz';
-    if (input % 5 === 0) return 'buzz';
-    return input;
-}
+// function fizzBuzz(input) {
+//     if (typeof input !== 'number') return 'not a number';
+//     if (input % 3 === 0 && input % 5 === 0) return 'fizzbuzz';
+//     if (input % 3 === 0) return 'fizz';
+//     if (input % 5 === 0) return 'buzz';
+//     return input;
+// }
 
-const output = fizzBuzz('jim');
-console.log(output);  // Output: 'fizz'
+// const output = fizzBuzz('jim');
+// console.log(output);  // Output: 'fizz'
+
+// speed limit = 70
+// for every 5 kmh more than 70 will get 1 demerit point
+// will use math.floor
+// more than 12 points == license suspended
+
+// function checkSpeed(speed){
+//     const speedLimit = 70;
+//     const kmPerDemeritPoint = 5;
+
+//     if (speed <=speedLimit) return 'ok';
+
+//     // calculating demerit points
+
+//     const demeritPoints = Math.floor((speed-speedLimit)/kmPerDemeritPoint);
+
+//     if (demeritPoints >=12) return 'Licence suspended'
+
+//     return `Total demerit Point: ${demeritPoints}`;
+
+// }
+
+// const check = checkSpeed(100);
+// console.log(check) // output : license suspended
 
