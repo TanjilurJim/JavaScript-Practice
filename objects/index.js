@@ -142,13 +142,80 @@
 // for (let key in person)
 //     console.log(key, person[key]);
 
-const colors = ['red','blue','green']
+// const colors = ['red','blue','green']
 
 // for (let index in colors)
 //     console.log(index,colors[index]);
 
 // for-of loop is an ideal way of iterating through arrays
 
-for(let color of colors)
-    console.log(color) // it would give the values of the index directly
+// for(let color of colors)
+//     console.log(color) // it would give the values of the index directly
+
+
+// with break key word you jump out of the loop
+// with continue you just go to the next iteration
+
+// let i = 0;
+// while (i <=10){
+//     if (i ==5) break; 
+//     if (i %2===0)  {
+//         i++;
+//         continue;
+//     }
+
+//     console.log(i);
+//     i++;
+
+// }
+
+// write a function that takes two numbers and returns the maximum of the two
+
+// (condition) ? a : b if the condition is true we use the one value or else we use the other value
+
+// function maxNum(a,b){
+//     // a =3
+//     // b = 4
+//     // let max = 0;
+
+//     // if(a>b) max = a
+//     // e
+//     // console.log(max)
+
+//     return (a >b) ? a:b;
+
+// }
+
+// let number = maxNum(3,6);
+// console.log(number)
+
+
+// detect if an image is landscape or portrait
+
+// function isLandscape(width, height){
+//     return width > height ? 'landscape' : 'portrait';
+// }
+
+// let img = isLandscape(60, 30);
+// console.log(img);  // Output: 'landscape'
+
+// FizzBuzz algorithm we give it an input and it returns a string
+
+// divisible by 3 == Fizz
+// divisible by 5 == buzz
+// number divisible by 3 and 5 == fizzbuzz
+// not divisible we get the same number
+// if we do not pass a number we get == 'not a number'
+
+
+function fizzBuzz(input) {
+    if (typeof input !== 'number') return 'not a number';
+    if (input % 3 === 0 && input % 5 === 0) return 'fizzbuzz';
+    if (input % 3 === 0) return 'fizz';
+    if (input % 5 === 0) return 'buzz';
+    return input;
+}
+
+const output = fizzBuzz('jim');
+console.log(output);  // Output: 'fizz'
 
