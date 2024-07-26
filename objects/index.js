@@ -243,3 +243,322 @@
 // const check = checkSpeed(100);
 // console.log(check) // output : license suspended
 
+// showNumbers(10);
+
+// function showNumbers(limit){
+
+//     for(let i = 0; i<=limit; i++) {
+//         // if(i%2 ===0 ) console.log(i, 'Even');
+//         // else console.log(i,'odd')
+//     // } or we can write it like this
+
+//     const message = ( i%2=== 0) ? 'Even' : 'Odd'
+//     console.log(i, message)
+//     }
+
+// }
+
+//TRUTHY OR FALSY
+
+// const name = 'Mosh'
+
+// if (name) console.log('');
+
+// const array = [0,null,NaN,undefined,1,2,3]
+
+// console.log(countTruthy(array))
+
+
+// function countTruthy(array) {
+
+//     let count = 0;
+//     for(let value of array)
+//         if(value)
+//             count++
+//     return count;
+
+
+// } //output : 3 because it only counts the positive values
+
+//object
+
+// let person={
+//     name: 'Mosh',
+//     age: 30
+// }
+// //Dot notation
+// // person.name = 'jim'
+// //bracket notation
+// person['name'] = 'jim'; 
+
+// console.log(person)
+
+// ARRAY is an object too
+// let selectedColors = ['red','blue']
+// selectedColors[2] = 1; //size of array and objects in the array are dynamic
+// console.log(selectedColors);
+
+
+// function greet(name) {
+//     console.log('Hello World', name);
+
+// }
+
+// greet('john');
+
+// sum of multiples 3 and 5
+
+// console.log(sum(10));
+
+// function sum(limit){
+//     let result = 0;
+
+//     for (let i = 0; i <=limit;i++){
+//         if (i%3===0 || i%5===0) 
+//             result+=i;
+//     }
+    
+
+//     return result
+        
+
+    
+// }
+// GRADE
+
+// avg 1-59 : F
+//60-69 : D
+//70-79: C
+//80-89: B
+//90-100: A
+
+// const marks = [80,80,50];
+
+// console.log(calculateGrade(marks));
+
+// function calculateGrade(marks) {
+//     let sum = 0;
+
+//     for (let mark of marks)
+//         sum += mark 
+
+//     let avg = sum / marks.length;
+
+//     if (avg < 60) return 'F';
+//     if (avg < 70) return 'D';
+//     if (avg < 80) return 'C';
+
+
+
+
+//     }
+
+// showStars(5);
+
+// function showStars(rows){
+
+//     for (let i = 0; i<=rows;i++){
+//         let pattern = '';
+
+//         for (let j = 0; j<=i; j++)
+//             pattern += '*';
+//         console.log(pattern)
+    
+
+//     }
+
+// }
+//====================================================
+
+// Prime Number
+
+// showPrimes(20);
+
+// function showPrimes(limit){
+
+//     for (let number =2; number<= limit; number++) {
+        
+//         let isPrime = true;
+//         for (let factor = 2; factor < number; factor++ ){
+//             if (number% factor === 0){
+//                 isPrime = false;
+//                 break;
+//             }
+//         }
+//         if (isPrime) console.log(number);  
+//     }
+
+
+
+// }
+
+// ===============================================================
+
+// OBJECTS - CHAPTER
+
+
+// let radius =1;
+// let x =1;
+// let y =1;
+
+// now instead of writing them separately we can just add all these related variables in an object
+
+// object oriented programming OOP is where
+
+// const circle = {
+//     radius:1,
+//     loaction: {
+//         x:1,
+//         y:1
+//     },
+//     isVisible: true, // value can be anything even a function 
+//     draw: function() {
+//         console.log('draw','it is working'); // if a function is part of an object. we call it a method
+
+//     }
+//     };
+
+// circle.draw() //Method
+// =============================
+
+// Factory Functions 
+
+// what if I want to draw 2 circle or more objects ?
+
+// factory function produce objects
+
+// function createCircle(radius){
+//     return  {
+//             radius:radius,
+            
+// //             // draw: function() {
+// //             //     console.log('draw','it is working'); 
+                
+// //             // }
+// //             // we can write the above draw function like this
+
+//             draw(){
+//                 console.log('hey hey');
+                
+
+//             }
+//             };
+
+// }
+// const myCircle = createCircle(1);
+
+// const circle1 = createCircle(1);
+// console.log(circle1)
+// circle1.draw()
+
+// const circle2 = createCircle(2);
+
+// console.log(2)
+
+// ====================================================
+// constructor Functions
+// in constructor function instead of writing return, we use this keyword and use new keyword to refer to the object
+// the job of this function is to construct or create an object
+// user Pascal Notation: OneTwo
+
+// function Circle(radius){
+//     this.radius = radius; // this is a keyword 
+//     this.draw = function() {
+//         console.log('const function is working');
+//     }
+
+// }
+// const circle = new Circle(1); // new operator first creates an empty object, it will set this to point to this object
+
+
+// console.log(circle.draw())
+
+
+
+// primitives vs Reference Types
+
+//  when we use an object, that object is not stoed in the variable, that object is stored somewhere else in the memory and address of that memory location is stored inside the variable
+//primitives are copied by their value
+// objects / reference types are copied by their reference
+
+
+// let x = {value: 10};
+// let y = x;
+
+// x.value =20;
+// let number = 10
+// function increase(number){
+    
+//     number++; // here it will be 11 but after the function it will go out of the scope
+// }
+
+// increase(number); 
+// console.log(number) // output 10 because primitives right?
+
+// now let's see 
+
+// let obj ={value:10};
+
+
+// function increase(obj){
+//     obj.value++;
+// }
+// increase(obj);
+// console.log(obj); //11  the reason is in the function it is refereing to the address of the object and outside too
+
+// for-in and for-of loops to iterate
+
+// const circle = {
+//     radius:1,
+//     draw(){
+//         console.log('draw');
+//     }
+//     };
+
+//     for (let key in circle) // getting the keys from the object
+//         console.log(key, circle[key]); // to get the value too along with the key we need to use bracket notation
+
+//     for (let key of circle)
+//         console.log(key) //we get an error
+// // BECAUSE FOR OF IS ONLY ITERABLE FOR ARRAYS AND MAPS
+// // AN OBJECT IS NOT ITERABLE WITH FOR OF LOOP
+
+// // however, THE METHOD Object.keys(circle) returns an array
+
+// for (let entry of Object.entries(circle))
+//     console.log(entry) // returns key value pair
+
+//cloning an object
+const circle = {
+    radius:1,
+    draw(){
+        console.log('draw');
+    }
+};
+    
+// to create another object copy of this circle
+
+// const another = {};
+
+// for (let key in circle)
+//     another[key] = circle[key]; // takes the key of circle
+
+// ANOTHER APPROACH TO CLONE OR COPY AN OBJECT
+
+// const another= Object.assign({color:'yellow'},circle); // this too works
+
+// const another = {...circle}; // the simplest way to clone an object
+
+// console.log('the copied object is',another);
+
+// built in Math object
+
+// console.log((Math.round(Math.random()*10)))
+
+
+
+
+
+
+
+
