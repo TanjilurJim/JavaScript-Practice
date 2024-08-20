@@ -602,11 +602,44 @@ const circle = {
 // }
 
 // constructor function
-let address = new Address('a','b','c');
-console.log(address)
-function Address(street, city, zipCode){
-    this.street = street;
-    this.city = city;
-    this.zipCode = zipCode;
+// let address1 = new Address('a','b','c');
+// let address2 = new Address('a','b','c');
+// // console.log(address)
+// function Address(street, city, zipCode){
+//     this.street = street;
+//     this.city = city;
+//     this.zipCode = zipCode;
 
-}
+// }
+
+// // to check object equality
+// function areEqual(address1,address2){
+//     return address1.street === address2.street &&
+//     address1.city === address2.city &&
+//     address1.zipCode === address2.zipCode;
+
+// }
+
+// function areSame(address1,address2){
+//     return address1 === address2;
+
+// }
+// console.log("checking", areEqual(address1,address2))
+// console.log("checking", areSame(address1,address2))
+
+
+// blog post object
+
+//title, body, author, views, comments (author, body),, isLive(True or False)
+
+ let blog = {
+    title : "No Title",
+    body : "b",
+    author:'c',
+    views : 10,
+    Comments: [{author: 'a', body:'b'},{author: 'j', body:'k'}],
+    isLive: true
+    
+ };
+
+ console.log(blog)
