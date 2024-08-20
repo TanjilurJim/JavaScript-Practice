@@ -556,9 +556,57 @@ const circle = {
 // console.log((Math.round(Math.random()*10)))
 
 
+// const dictionary = [
+//     {word: "cloudlet", definition:"A small cloud"},
+//     {word: "harbinger", definition: "A sign of what is to come"},
+//     {word:"paean", definition: "A song of praise"},
+//     {word: "eddy", definition:" To whirl in circles on the wind"}
+// ]; 
+
+// =================================
+// challenge 1
+// street
+// city
+//zipCode
+// create a function that takes all the properties of the object 
+
+// const address = {
+//     Street:"Azimpur",
+//     City:"Dhaka",
+//     ZipCode:1205,
+    
+// };
+
+// function showAddress(address) {
+//     for (let key in address)
+//         console.log(key, address[key])
+// }
+
+// showAddress(address);
+
+// factory function and constructor function to initialize and address object
+
+// factory function
+
+// let address = createAddress('a','b','c');
+// console.log(address);
+
+// function createAddress(street,city,zipCode) {
+//     return {
+//         street,
+//         city,
+//         zipCode
+//     };
 
 
+// }
 
+// constructor function
+let address = new Address('a','b','c');
+console.log(address)
+function Address(street, city, zipCode){
+    this.street = street;
+    this.city = city;
+    this.zipCode = zipCode;
 
-
-
+}
