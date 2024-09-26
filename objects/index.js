@@ -632,14 +632,16 @@ const circle = {
 
 //title, body, author, views, comments (author, body),, isLive(True or False)
 
- let blog = {
-    title : "No Title",
-    body : "b",
-    author:'c',
-    views : 10,
-    Comments: [{author: 'a', body:'b'},{author: 'j', body:'k'}],
-    isLive: true
+//  let blog = {
+//     title : "No Title",
+//     body : "b",
+//     author:'c',
+//     views : 10,
+//     Comments: [{author: 'a', body:'b'},{author: 'j', body:'k'}],
+//     isLive: true
     
- };
+//  };
 
- console.log(blog)
+//  console.log(blog)
+
+// console.log("Hello world");
