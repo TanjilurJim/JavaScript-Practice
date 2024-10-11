@@ -644,4 +644,44 @@ const circle = {
 
 //  console.log(blog)
 
-// console.log("Hello world");
+// console.log("Hello world" ); 
+// arrays
+
+// let selectedColors = ['blue','green','red'];
+// // selectedColors[2] = 1;
+// console.log(selectedColors.length);
+
+// let points = 110;
+// let type = points > 100 ? 'gold': 'silver'
+
+// console.log(type) 
+
+ // bit-wise operator
+
+//  console.log( 1 | 2); // bitwise or = 3 is the ans. but how?
+
+//  1 = 00000001
+// 2 =  00000010
+// R = 000000011 = 3
+
+// BIT-WISE AND
+
+// console.log(1 & 2); 
+// if both numbers are 1, it will be 1 otherwise 0.
+
+//   = 00000100 then read
+//  =  00000010 then write
+//  =  00000001 then execute
+const readPermission =4;
+const writePermission = 2;
+const executePermission = 1;
+
+let myPermission = 0;
+myPermission = myPermission | writePermission;
+
+// console.log(myPermission) = 6
+// with- bitwise and operator we can check to see permissions i.e
+
+let message = (myPermission & readPermission) ? "yes" : "no";
+
+console.log(message)
