@@ -672,16 +672,29 @@ const circle = {
 //   = 00000100 then read
 //  =  00000010 then write
 //  =  00000001 then execute
-const readPermission =4;
-const writePermission = 2;
-const executePermission = 1;
+// const readPermission =4;
+// const writePermission = 2;
+// const executePermission = 1;
 
-let myPermission = 0;
-myPermission = myPermission | writePermission;
+// let myPermission = 0;
+// myPermission = myPermission | writePermission;
 
-// console.log(myPermission) = 6
-// with- bitwise and operator we can check to see permissions i.e
+// // console.log(myPermission) = 6
+// // with- bitwise and operator we can check to see permissions i.e
 
-let message = (myPermission & readPermission) ? "yes" : "no";
+// let message = (myPermission & readPermission) ? "yes" : "no";
 
-console.log(message)
+// console.log(message)
+
+// swapping values
+
+
+// let a = 'red';
+// let b = 'blue'
+// let temp = a;
+// a = b;
+// b = temp;
+
+// console.log(a)
+// console.log(b)
+
