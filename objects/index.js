@@ -698,3 +698,27 @@ const circle = {
 // console.log(a)
 // console.log(b)
 
+// do-while loop
+
+// let i = 0;
+// do {
+//     if (i%2 ==0) console.log(i);
+//     i++;     
+// } while (i <=5); 
+
+// for-in loop
+// to display all the properties of an object
+
+// const person = {
+//     name: "Mosh",
+//     age: 30
+
+// };
+
+// for (let i in person)
+//     console.log(i, person[i]);
+
+// const colors = ['red','green','blue'];
+
+// for (let i in colors)
+//     console.log(i, colors[i])
