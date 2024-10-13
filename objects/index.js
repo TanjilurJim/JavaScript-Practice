@@ -718,7 +718,12 @@ const circle = {
 // for (let i in person)
 //     console.log(i, person[i]);
 
-// const colors = ['red','green','blue'];
+const colors = ['red','green','blue'];
 
 // for (let i in colors)
 //     console.log(i, colors[i])
+
+//from es6, for-of loop is a new way of iterating over arrays
+ 
+for (let color of colors)
+    console.log(color);
